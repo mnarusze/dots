@@ -15,9 +15,13 @@ done
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Install solarized
+# Install solarized plugin for vim
 curl -fLo ~/.vim/colors/solarized.vim --create-dirs \
         https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim
+
+# Install solarized dircolors
+curl -fLo ~/.dircolors \
+        https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-light
 
 # Setup git aliases
 git config --global alias.co checkout
