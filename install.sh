@@ -5,12 +5,6 @@ git_mail=maciej.naruszewicz@intel.com
 
 ################################################
 
-# Copy all dot files
-for file in $(ls -A $(dirname $0)/files) ; do
-    echo "Installing $file"
-    ln -fs $(pwd)/files/$file $HOME/$file
-done
-
 # Install vim-plugged
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -22,6 +16,12 @@ curl -fLo ~/.vim/colors/solarized.vim --create-dirs \
 # Install solarized dircolors
 curl -fLo ~/.dircolors \
         https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-light
+
+# Copy all dot files
+for file in $(ls -A $(dirname $0)/files) ; do
+    echo "Installing $file"
+    ln -fs $(pwd)/files/$file $HOME/$file
+done
 
 # Setup git aliases
 git config --global alias.co checkout
