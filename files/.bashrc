@@ -14,3 +14,6 @@ export KUBE_EDITOR="vim"
 # Aliases
 alias l='ls -al'
 
+# Source VBoxManage completion
+source $HOME/repos/vboxmanage-bash-completion/VBoxManage
+

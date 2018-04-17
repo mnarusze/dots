@@ -34,3 +34,6 @@ git config --global alias.dump 'cat-file -p'
 git config --global user.name "Maciej Naruszewicz"
 git config --global user.email "$git_mail"
 
+# Clone VBoxManage bash completion
+git clone git@github.com:gryf/vboxmanage-bash-completion.git
+
