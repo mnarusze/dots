@@ -34,6 +34,11 @@ git config --global alias.dump 'cat-file -p'
 git config --global user.name "Maciej Naruszewicz"
 git config --global user.email "$git_mail"
 
+# Set vim as the default text editor for git
+git config --global core.editor "vim"
+
 # Clone VBoxManage bash completion
-git clone git@github.com:gryf/vboxmanage-bash-completion.git
+if [ ! -d ../vboxmanage-bash-completion ] ; then
+    git clone git@github.com:gryf/vboxmanage-bash-completion.git ../vboxmanage-bash-completion
+fi
 
