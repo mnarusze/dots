@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Git config
-git_mail=maciej.naruszewicz@intel.com
-
-################################################
-
 # Install vim-plugged
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -33,7 +28,7 @@ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --grap
 git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'
 git config --global user.name "Maciej Naruszewicz"
-git config --global user.email "$git_mail"
+git config --global user.email "maciej.naruszewicz@intel.com"
 
 # Set vim as the default text editor for git
 git config --global core.editor "vim"
