@@ -14,7 +14,8 @@ curl -fLo ~/.vim/colors/solarized.vim --create-dirs \
         https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 
 # Install solarized dircolors
-curl -fLo ~/.dircolors \
+# TODO: light/dark
+curl -fLo ~/.dir_colors \
         https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-light
 
 # Copy all dot files
