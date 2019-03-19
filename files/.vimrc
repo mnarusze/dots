@@ -53,6 +53,6 @@ autocmd BufRead,BufNewFile *.yml set ft=ansible
 " enable solarized
 syntax enable
 set t_Co=256
-set background=dark
+set background=light
 colorscheme solarized
 

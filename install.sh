@@ -42,3 +42,5 @@ if [ ! -d ../vboxmanage-bash-completion ] ; then
     git clone git@github.com:gryf/vboxmanage-bash-completion.git ../vboxmanage-bash-completion
 fi
 
+sudo cp -f ../vboxmanage-bash-completion/VBoxManage /etc/bash_completion.d/
+

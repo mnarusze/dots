@@ -14,6 +14,9 @@ export KUBE_EDITOR="vim"
 # Aliases
 alias l='ls -al'
 
-# Source VBoxManage completion
-source $HOME/repos/vboxmanage-bash-completion/VBoxManage
+# Set vim as the text editor for some apps that use it
+export EDITOR=vim
+
+# Common PATH extensions
+export PATH="$PATH:$HOME/.local/bin"
 
