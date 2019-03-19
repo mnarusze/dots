@@ -48,7 +48,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " treat all .ym[a]l files as ansible
-autocmd BufRead,BufNewFile *.yml set ft=ansible
+autocmd BufRead,BufNewFile *.yml set ft=yaml.ansible
 
 " enable solarized
 syntax enable
