@@ -39,7 +39,7 @@ git config --global core.editor "vim"
 
 # Clone VBoxManage bash completion
 if [ ! -d ../vboxmanage-bash-completion ] ; then
-    git clone git@github.com:gryf/vboxmanage-bash-completion.git ../vboxmanage-bash-completion
+    git clone https://github.com/gryf/vboxmanage-bash-completion ../vboxmanage-bash-completion
 fi
 
 sudo cp -f ../vboxmanage-bash-completion/VBoxManage /etc/bash_completion.d/
